@@ -4,15 +4,15 @@ import { projects } from "@/data/project";
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-black px-6 py-24 text-white">
+    <section id="projects" className="bg-[#EFDF6D] px-6 py-24 text-black">
       <div className="mx-auto max-w-6xl">
         {/* Section heading */}
         <div className="mb-12">
           <h2 className="text-3xl font-medium tracking-tight">
-            Selected Works<span className="text-[#EFDF6D]">.</span>
+            Selected Works<span className="text-black">.</span>
           </h2>
 
-          <p className="mt-4 max-w-xl text-gray-300">
+          <p className="mt-4 max-w-xl text-gray-800">
             A collection of projects where ideas meet design, functionality, and
             creativity.
           </p>
@@ -26,7 +26,7 @@ const Projects = () => {
             return (
               <article
                 key={index}
-                className="flex flex-col overflow-hidden rounded-lg border border-white/15 bg-neutral-900"
+                className="flex flex-col overflow-hidden rounded-lg border border-white/15 bg-neutral-900 text-white"
               >
                 {/* Project image */}
                 <div className="relative overflow-hidden border-b border-white/15">

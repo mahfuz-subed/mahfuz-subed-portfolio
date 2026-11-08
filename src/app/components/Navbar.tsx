@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link
-            href="#home"
+            href="/"
             className="btn btn-ghost px-2 text-xl font-extrabold tracking-tight text-white hover:bg-transparent"
           >
             Mahfuz<span className="text-[#EFDF6D]">.</span>

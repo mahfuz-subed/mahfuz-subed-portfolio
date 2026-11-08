@@ -48,14 +48,14 @@ const ProjectDetails = async ({
           className="mt-8 w-full rounded-xl object-cover"
         />
 
-        <div className="mt-8 rounded-xl bg-white p-8">
+        <div className="mt-8 rounded-xl border border-white/15 bg-black p-8 text-white">
           <h2 className="text-2xl font-bold">Technologies Used</h2>
 
           <div className="mt-3 flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="rounded-full bg-[#EFDF6D] px-4 py-2 text-sm"
+                className="rounded-full bg-[#EFDF6D] px-4 py-2 text-sm text-black"
               >
                 {tech}
               </span>
@@ -63,10 +63,10 @@ const ProjectDetails = async ({
           </div>
 
           <h2 className="mt-8 text-2xl font-bold">About the Project</h2>
-          <p className="mt-3 text-gray-700">{project.description}</p>
+          <p className="mt-3 text-gray-300">{project.description}</p>
 
           <h2 className="mt-8 text-2xl font-bold">Challenges Faced</h2>
-          <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700">
+          <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-300 marker:text-[#EFDF6D]">
             {project.challenges.map((challenge) => (
               <li key={challenge}>{challenge}</li>
             ))}
@@ -76,7 +76,7 @@ const ProjectDetails = async ({
             <div>
               {" "}
               <h2 className="mt-8 text-2xl font-bold">Future Improvements</h2>
-              <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-700">
+              <ul className="mt-3 list-disc space-y-2 pl-6 text-gray-300 marker:text-[#EFDF6D]">
                 {project.improvements?.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -89,7 +89,7 @@ const ProjectDetails = async ({
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg bg-black px-5 py-3 text-white"
+              className="rounded-lg bg-[#EFDF6D] px-5 py-3 font-medium text-black hover:bg-white"
             >
               Live Project ↗
             </Link>
@@ -98,7 +98,7 @@ const ProjectDetails = async ({
               href={project.githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-black px-5 py-3 text-black"
+              className="rounded-lg border border-white/40 px-5 py-3 text-white hover:bg-white/10"
             >
               GitHub Repository ↗
             </Link>
